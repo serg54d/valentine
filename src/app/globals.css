@@ -1,42 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --rose-deep: #8b1a3a;
+    --rose-rich: #a82550;
+    --rose-mid: #c94c6e;
+    --rose-soft: #e07a94;
+    --rose-light: #f2a5b8;
+    --rose-pale: #fad4de;
+    --rose-whisper: #fef0f3;
+    --gold: #c49a2a;
+    --gold-light: #e0be5c;
+    --gold-pale: #f5e2a8;
+    --cream: #faf5ee;
+    --burgundy: #4a0a22;
+    --text-primary: #3a1a28;
+    --text-secondary: #6b4055;
+    --text-muted: #9a7488;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background: var(--cream);
+    color: var(--text-primary);
+    overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+::selection { background: var(--rose-pale); color: var(--rose-deep); }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--rose-light); border-radius: 3px; }
